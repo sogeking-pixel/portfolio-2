@@ -1,14 +1,96 @@
 :root {
     --font-title: 'Inter';
     --font-body: 'Lato';
-  }
 
+    --color-background: #FEFEFe;
+
+    --color-primary:#070607;
+    --color-secondary: #20768D;
+    --color-tertiary: #8E1522;
+
+    --color-text-primary: #1E1E1E;
+    --color-text-secondary: #637E86;
+
+  }
+  .body-container {
+   height: 100vh;
+   display: flex; 
+   /* overflow: hidden; */
+ }
+ 
+ aside.left {
+   position: sticky;
+   top: 0;
+   height: 100vh;
+   /* overflow: hidden; */
+   overflow-y: auto;
+   /* z-index: -1; */
+ }
+ 
+ main.right {
+   min-height: 100vh;
+   overflow-y: auto;
+ }
 
 
   *{
     font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text-primary)
   }
+
+ 
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-title);
   }
+  a {
+    text-decoration: none;
+  }
+
+  .title-presentation{
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+
+ .first-name{
+    font-family: var(--font-title);
+ }
+
+ .last-name{
+    font-family: var(--font-title);
+    color: var(--color-secondary);
+ }
+
+ .role-title{
+    color: var(--color-tertiary);
+    font-weight: 600;
+ }
+
+ .nav a{
+    font-family: var(--font-title);
+    color: var(--color-text-secondary);
+    font-weight: 600;
+ }
+
+ .nav li{
+    margin: 1.3rem 0;
+ }
+
+.nav li.select-nav {
+    margin: 1.7rem 0;
+}
+
+ .select-nav a{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+ }
+
+ .network a{
+    font-size: 1.4rem;
+    color:var(--color-secondary);
+    font-weight: 600;
+ }
+
+ 

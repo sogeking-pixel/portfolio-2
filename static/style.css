@@ -12,6 +12,15 @@
     --color-text-secondary: #637E86;
 
   }
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+  }
+  
   .body-container {
    height: 100vh;
    display: flex; 
@@ -33,7 +42,7 @@
  }
 
 
-  *{
+ body{
     font-family: var(--font-body);
     background-color: var(--color-background);
     color: var(--color-text-primary)
@@ -67,25 +76,65 @@
     font-weight: 600;
  }
 
- .nav a{
-    font-family: var(--font-title);
-    color: var(--color-text-secondary);
-    font-weight: 600;
- }
-
- .nav li{
-    margin: 1.3rem 0;
- }
-
-.nav li.select-nav {
-    margin: 1.7rem 0;
+.nav a {
+  font-family: var(--font-title);
+  color: var(--color-text-secondary); 
+  font-weight: 600;
+  text-decoration: none; 
+  transition: color 0.3s ease; 
 }
 
- .select-nav a{
-    font-size: 1.9rem;
-    font-weight: 700;
-    color: var(--color-primary);
- }
+.nav li {
+  list-style: none;
+  margin: 1.3rem 0;
+  display: flex; 
+  align-items: center; 
+  padding-left: 0; 
+}
+
+
+.nav li::before {
+  content: ''; 
+  display: inline-block; 
+  height: 2px; 
+  background-color: var(--color-text-secondary); 
+  width: 20px; 
+  margin-right: 15px; 
+  transition: width 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.nav li.select-nav {
+  margin: 1.7rem 0; 
+}
+
+.select-nav a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary); 
+}
+
+
+.nav li.select-nav::before {
+  width: 50px; 
+  background-color: var(--color-primary); 
+}
+
+
+.nav li:hover::before {
+  width: 30px; 
+  background-color: var(--color-primary); 
+}
+
+.nav li a:hover {
+  color: var(--color-primary); 
+}
+
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+}
 
  .network a{
     font-size: 1.4rem;
@@ -93,4 +142,47 @@
     font-weight: 600;
  }
 
+ .line-node{
+  background-color: #070607;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: -6px;
+  position: absolute;
+ }
+
+ .title-work{
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.6rem;
+ }
+ .place-work{
+  font-size: large;
+ }
+ .date-work{
+  font-size: large;
+ }
+ .timeline{
+  position: relative;
+ }
+
+.line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--color-primary);
+}
+.project h3{
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.group-skills h3{
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
  

@@ -10,30 +10,32 @@
 </head>
 <body>
 
-    <div class="container-fluid">
+    <div id="background"></div>
+    <div class="container-fluid nose">
+
 
         <div class="row container m-auto">
 
-            <aside class="left col-6 pt-5">
-                <div class="presentation pt-5">
+            <aside class="left col-6 py-5 d-flex flex-column">
+                <div class="presentation py-5 px-2">
                     <h1 class="title-presentation">
                         <span class="first-name">Yerson</span> 
                         <span class="last-name">Sanchez</span>
                     </h1>
 
-                    <h2 id="role-title" class="role-title">Desarrollador Backend</h2>
+                    <h2 class="role-title"><span id="changing-text"></span></h2>
                     <p>I build accessible, pixel-perfect digital experiences for the web.</p>
                 </div>
-                <div class="nav">
+                <div class="nav py-5 px-2 flex-grow-1 overflow-auto">
                     <ul>
                         <li><a  href="#start">Inicio</a></li>
-                        <li class="select-nav"><a  href="#experience">Experiencia</a></li>
-                        <li><a href="#project">Projectos</a></li>
+                        <li class="select-nav"><a  href="#experiences">Experiencia</a></li>
+                        <li><a href="#projects">Projectos</a></li>
                         <li><a href="#skills">Skills</a></li>
                     </ul>
                 </div>
 
-                <div class="network">
+                <div class="network py-5 px-2">
                     <a href="cv.pdf" download>Ver CV</a>
                     <div>
                         <i></i>
@@ -45,68 +47,72 @@
                 
             </aside >
 
-            <main class="right col-6 d-md-block">
-                <div class="m-auto">
+            <main class="right col-6 d-md-block pt-5">
+                <div class="py-5">
 
-                    <section class="about-me">
+                    <section class="about-me pb-5 mb-5 mt-4" id="start">
                         Soy un desarrollador apasionado por construir sistemas backend robustos, escalables y eficientes. Mi trabajo se centra en diseñar arquitecturas sólidas, optimizar bases de datos y desarrollar APIs de alto rendimiento que impulsan experiencias de usuario excepcionales. Disfruto resolviendo desafíos complejos y construyendo soluciones con un enfoque en la confiabilidad y la performance.
                     </section>
     
-                    <section class="timeline">
+                    <section class="timeline my-5 py-2 mx-2" id="experiences">
                         <div class="line"></div>
-                        <div class="work">
-                            <h3>Practicante de Machine Learning</h3>
-                            <h4>Universidad Nacional de Trujillo</h4>
-                            <h4>09/2024 - 12/2024</h4>
-                            <ul>
-                                <li>Desarrollé un modelo con redes convolucionales para la predicción del Indice Niño 1+2.</li>
-                                <li>Realicé la limpieza y procesamiento de datos meteorológicos, preparando la información para el entrenamiento del modelo.</li>
-                                <li> Llevé a cabo el análisis de resultados y la visualización de tendencias del modelo.</li>                      
-                            </ul>
-                            <div class="bubble">
-                                <div>
-                                    Python
+
+                        <div class="work pb-5 mb-4">
+                            <div class="line-node"></div>
+                            <div class="content-work ps-5">
+                                <h3 class="title-work">Practicante de Machine Learning</h3>
+                                <h4 class="place-work">Universidad Nacional de Trujillo</h4>
+                                <h4 class="date-work">09/2024 - 12/2024</h4>
+                                <ul class="my-3">
+                                    <li>Desarrollé un modelo con redes convolucionales para la predicción del Indice Niño 1+2.</li>
+                                    <li>Realicé la limpieza y procesamiento de datos meteorológicos, preparando la información para el entrenamiento del modelo.</li>
+                                    <li> Llevé a cabo el análisis de resultados y la visualización de tendencias del modelo.</li>                      
+                                </ul>
+                                <div class="bubble">
+                                    <div>
+                                        Python
+                                    </div>
+                                    <div>
+                                        Python
+                                    </div>
+                                    <div>
+                                        Python
+                                    </div>
                                 </div>
-                                <div>
-                                    Python
-                                </div>
-                                <div>
-                                    Python
-                                </div>
-                            </div>
-                            
-    
-    
+
+                            </div>                           
                         </div>
+
                         <div class="work">
-                            <h3>Desarrollador de Software</h3>
-                            <h4>Universidad Nacional de Trujillo</h4>
-                            <h4>10/2023 - 03/2024</h4>
-                            <ul>
-                                <li>Diseñé e implementé una base de datos robusta en MySQL para un sistema bibliotecario.</li>
-                                <li>Creé APIs REST con PHP, incluyendo autenticación segura de usuarios utilizando JWT.</li>
-                                <li>Contribuí al desarrollo del frontend, mejorando la interacción del usuario con las funcionalidades de libros, préstamos y perfiles.</li>                      
-                            </ul>
-                            <div>
-                                <div>
-                                    Python
-                                </div>
-                                <div>
-                                    Python
-                                </div>
-                                <div>
-                                    Python
+                            <div class="line-node"></div>
+                            <div class="content-work ps-5">
+                                <h3 class="title-work">Desarrollador de Software</h3>
+                                <h4 class="place-work">Universidad Nacional de Trujillo</h4>
+                                <h4 class="date-work">10/2023 - 03/2024</h4>
+                                <ul class="my-3">
+                                    <li>Diseñé e implementé una base de datos robusta en MySQL para un sistema bibliotecario.</li>
+                                    <li>Creé APIs REST con PHP, incluyendo autenticación segura de usuarios utilizando JWT.</li>
+                                    <li>Contribuí al desarrollo del frontend, mejorando la interacción del usuario con las funcionalidades de libros, préstamos y perfiles.</li>                      
+                                </ul>
+                                <div  class="bubble">
+                                    <div>
+                                        Python
+                                    </div>
+                                    <div>
+                                        Python
+                                    </div>
+                                    <div>
+                                        Python
+                                    </div>
                                 </div>
                             </div>
                             
-    
-    
                         </div>
     
                     </section>
     
-                    <section class="projects">
-                        <div class="project">
+                    <section class="projects my-5 py-5" id="projects">
+                        <div class="project my-5">
                             <h3>Server HTTP desde Cero</h3>
                             <p>
                                 Desarrollo de un servidor HTTP funcional en Java, implementando directamente los protocolos de comunicación. Este proyecto profundizó mi comprensión de cómo funcionan las peticiones y respuestas web a bajo nivel, manejo de conexiones y concurrencia.
@@ -127,7 +133,7 @@
                             </div>
                             
                         </div>
-                        <div class="project">
+                        <div class="project my-5">
                             <h3>Servidor DNS desde Cero</h3>
                             <p>
                                 Implementación de un servidor DNS en Java para resolver nombres de dominio a direcciones IP, manejando diferentes tipos de registros DNS. Este proyecto reforzó mis conocimientos en protocolos de red, UDP y el funcionamiento de la resolución de nombres en internet.
@@ -147,7 +153,7 @@
                                 <a href="#">GitHub</a>
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="project my-5">
                             <h3>Sistema de Gestión de Biblioteca Virtual</h3>
                             <p>
                                 Aplicación web completa para la gestión de una biblioteca, incluyendo CRUD de libros, usuarios y préstamos. Demuestra mi habilidad en el desarrollo web full-stack (enfocado en el backend con Django), diseño de bases de datos relacionales con PostgreSQL y el uso del ORM.
@@ -167,7 +173,7 @@
                                 <a href="#">GitHub</a>
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="project my-5">
                             <h3>API RESTful de Gestión de Inventario</h3>
                             <p>
                                 Desarrollo de una API RESTful para la gestión de inventario, incluyendo funcionalidades CRUD para productos y categorías. Implementación robusta de seguridad utilizando JSON Web Tokens (JWT) para la autenticación y autorización de usuarios.
@@ -187,7 +193,7 @@
                                 <a href="#">GitHub</a>
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="project my-5">
                             <h3>Web Scraping Tiendas de Tecnologias Peru</h3>
                             <p>
                                 Sistema de web scraping para extraer datos de productos de tres tiendas online peruanas. El proyecto destacó por experimentar con diversas metodologías de extracción y parseo: desde el uso directo de IA para la extracción, parseo manual con BeautifulSoup, hasta el refinamiento de datos con Large Language Models (LLMs). Los resultados se estructuraron y guardaron en archivos JSON.
@@ -207,7 +213,7 @@
                                 <a href="#">GitHub</a>
                             </div>
                         </div>
-                        <div class="project">
+                        <div class="project my-5">
                             <h3>API RESTful de Geografía Peruana</h3>
                             <p>
                                 Desarrollo de una API RESTful diseñada para proporcionar datos geográficos de Perú, incluyendo departamentos, provincias y ciudades. Esta API fue creada principalmente como una herramienta utilitaria para pruebas de desarrollo, permitiendo la validación de campos de ubicación en formularios de registro u otras funcionalidades que requieran datos geográficos reales y estructurados.
@@ -229,7 +235,7 @@
                         </div>
                     </section>
     
-                    <section class="skills">
+                    <section class="skills" id="skills">
                         <div class="group-skills">
                             <h3>Lenguajes</h3>
                             <div class="Lenguages-icons">
@@ -276,5 +282,45 @@
             
         </div>
     </div>
+
+
+    <script src="static/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    VANTA.DOTS({
+    el: "#backgroulnd",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x748f97,
+    color2: 0xfffdfd,
+    backgroundColor: 0xfffdfd,
+    size: 3,
+    spacing: 35.00,
+    showLines: false
+    })
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var typed = new Typed('#changing-text', {
+        strings: ["Ing. Informatico", "Desarrollador de Software", "Desarrollador Backend"],
+        typeSpeed: 70,       // Speed of typing
+        backSpeed: 40,       // Speed of erasing
+        backDelay: 1500,     // Pause before erasing
+        startDelay: 500,     // Delay before typing starts
+        loop: true,          // Loop indefinitely
+        showCursor: true,    // Show the blinking cursor
+        cursorChar: '|',     // Character for the cursor
+        // The library automatically handles maintaining space for the text,
+        // but for the overall container, still consider min-height on .role-title.
+    });
+});
+    </script>
 </body>
 </html>

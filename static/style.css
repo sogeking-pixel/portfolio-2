@@ -26,7 +26,9 @@
    display: flex; 
    /* overflow: hidden; */
  }
- 
+ .content-row{
+  background-color: rgba(255, 255, 255, 0.507);
+ }
  aside.left {
    position: sticky;
    top: 0;
@@ -39,8 +41,14 @@
  main.right {
    min-height: 100vh;
    overflow-y: auto;
+   
  }
-
+ .arrow-link{
+  width: 1em; height: 1em; vertical-align: middle; transition: transform 0.3s ease;
+ }
+ a:hover .arrow-link{
+  transform: translateY(-6px);
+ }
 
  body{
     font-family: var(--font-body);
@@ -58,7 +66,7 @@
   }
 
   .title-presentation{
-    font-size: 3.5rem;
+    font-size: 3.8rem;
     font-weight: 900;
   }
 
@@ -137,11 +145,20 @@
 }
 
  .network a{
-    font-size: 1.4rem;
-    color:var(--color-secondary);
+    font-size: 1.2rem;
+   color: #515152;
     font-weight: 600;
+    transition: color 0.2s ease;
  }
+ .network a:hover{
+  color:var(--color-primary);
+}
 
+ .network-items a{
+  color: var(--color-primary);
+  padding: 0.4rem;
+
+ }
  .line-node{
   background-color: #070607;
   width: 15px;
@@ -185,4 +202,19 @@
   font-weight: 600;
   font-size: 1.6rem;
 }
- 
+
+.bubble-skill{
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  margin: 0 0.2rem;
+  font-size: 0.7rem;
+  background-color: #637E86;
+  color: #FEFEFe;
+  border-radius: 1px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bubble-skill:hover{
+  transform: translateX(2px);
+  background-color: #506166;
+}

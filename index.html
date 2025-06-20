@@ -6,6 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
     <title>Portafolio</title>
 </head>
 <body>
@@ -14,7 +16,7 @@
     <div class="container-fluid nose">
 
 
-        <div class="row container m-auto">
+        <div class="row container m-auto content-row">
 
             <aside class="left col-6 py-5 d-flex flex-column">
                 <div class="presentation py-5 px-2">
@@ -36,11 +38,23 @@
                 </div>
 
                 <div class="network py-5 px-2">
-                    <a href="cv.pdf" download>Ver CV</a>
-                    <div>
-                        <i></i>
-                        <i></i>
-                        <i></i>
+                    <a href="cv.pdf" download class="px-2">Ver CV <svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg></a>
+                    <div class="network-items py-3">
+
+                        <a href="https://www.linkedin.com/in/yersonsanchez" target="_blank" aria-label="LinkedIn">
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm15.25 12.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-11h2.89v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v6.47z"/></svg>
+                        </a>
+                        <a href="mailto:sanchezleivayerson@gmail.com" aria-label="Correo">
+                            <svg width="36" height="36" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8.99l8 6.99 8-6.99V18z"/></svg>
+                        </a>
+                        <a href="https://wa.me/51954566169" target="_blank" aria-label="WhatsApp">
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.64zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-2.651-1.033-5.136-2.901-7.006-1.869-1.871-4.356-2.905-7.006-2.906-5.451 0-9.887 4.434-9.889 9.884-.001 1.956.571 3.86 1.651 5.499l-.999 3.648 3.763-.826zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.366.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        </a>
+                        <a href="https://github.com/sogeking-pixel" target="_blank" aria-label="GitHub">
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        </a>
                     </div>
                     
                 </div>              
@@ -69,14 +83,20 @@
                                     <li> Llevé a cabo el análisis de resultados y la visualización de tendencias del modelo.</li>                      
                                 </ul>
                                 <div class="bubble">
-                                    <div>
+                                    <div class="bubble-skill">
                                         Python
                                     </div>
-                                    <div>
-                                        Python
+                                    <div class="bubble-skill">
+                                        TensorFlow
                                     </div>
-                                    <div>
-                                        Python
+                                    <div class="bubble-skill">
+                                        Pandas
+                                    </div>
+                                    <div class="bubble-skill">
+                                        Numpy
+                                    </div>
+                                    <div class="bubble-skill">
+                                        Matplolib
                                     </div>
                                 </div>
 
@@ -94,15 +114,27 @@
                                     <li>Creé APIs REST con PHP, incluyendo autenticación segura de usuarios utilizando JWT.</li>
                                     <li>Contribuí al desarrollo del frontend, mejorando la interacción del usuario con las funcionalidades de libros, préstamos y perfiles.</li>                      
                                 </ul>
-                                <div  class="bubble">
-                                    <div>
-                                        Python
+                                <div class="bubble">
+                                    <div class="bubble-skill">
+                                        PHP
                                     </div>
-                                    <div>
-                                        Python
+                                    <div class="bubble-skill">
+                                        Api RESTful
                                     </div>
-                                    <div>
-                                        Python
+                                    <div class="bubble-skill">
+                                        MySql
+                                    </div>
+                                    <div class="bubble-skill">
+                                        JWT
+                                    </div>                                   
+                                    <div class="bubble-skill">
+                                        JavaScript
+                                    </div>
+                                    <div class="bubble-skill">
+                                        Bootstrap
+                                    </div>
+                                    <div class="bubble-skill">
+                                        JQuery
                                     </div>
                                 </div>
                             </div>
@@ -117,16 +149,17 @@
                             <p>
                                 Desarrollo de un servidor HTTP funcional en Java, implementando directamente los protocolos de comunicación. Este proyecto profundizó mi comprensión de cómo funcionan las peticiones y respuestas web a bajo nivel, manejo de conexiones y concurrencia.
                             </p>
-                            <div class="skills-bubble">
-                                <div>
-                                    Python
+                            <div class="bubble">
+                                <div class="bubble-skill">
+                                    Java
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    Sockets
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    TCP
                                 </div>
+                                
                             </div>
                             <div class="reference">
                                 <a href="#">GitHub</a>
@@ -138,16 +171,17 @@
                             <p>
                                 Implementación de un servidor DNS en Java para resolver nombres de dominio a direcciones IP, manejando diferentes tipos de registros DNS. Este proyecto reforzó mis conocimientos en protocolos de red, UDP y el funcionamiento de la resolución de nombres en internet.
                             </p>
-                            <div class="skills-bubble">
-                                <div>
-                                    Python
+                            <div class="bubble">
+                                <div class="bubble-skill">
+                                    Java
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    Sockets
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    UDP
                                 </div>
+                                
                             </div>
                             <div class="reference">
                                 <a href="#">GitHub</a>
@@ -158,16 +192,23 @@
                             <p>
                                 Aplicación web completa para la gestión de una biblioteca, incluyendo CRUD de libros, usuarios y préstamos. Demuestra mi habilidad en el desarrollo web full-stack (enfocado en el backend con Django), diseño de bases de datos relacionales con PostgreSQL y el uso del ORM.
                             </p>
-                            <div class="skills-bubble">
-                                <div>
+                            <div class="bubble">
+                                <div class="bubble-skill">
                                     Python
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    Django
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    PostgreSQL
                                 </div>
+                                <div class="bubble-skill">
+                                    JavaScript
+                                </div>
+                                <div class="bubble-skill">
+                                    Bootstrap
+                                </div>
+                                
                             </div>
                             <div class="reference">
                                 <a href="#">GitHub</a>
@@ -178,16 +219,23 @@
                             <p>
                                 Desarrollo de una API RESTful para la gestión de inventario, incluyendo funcionalidades CRUD para productos y categorías. Implementación robusta de seguridad utilizando JSON Web Tokens (JWT) para la autenticación y autorización de usuarios.
                             </p>
-                            <div class="skills-bubble">
-                                <div>
+                            <div class="bubble">
+                                <div class="bubble-skill">
                                     Python
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    Flask
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    JWT
                                 </div>
+                                <div class="bubble-skill">
+                                    MongoDB
+                                </div>
+                                <div class="bubble-skill">
+                                    Api RESTful
+                                </div>
+                                
                             </div>
                             <div class="reference">
                                 <a href="#">GitHub</a>
@@ -198,16 +246,20 @@
                             <p>
                                 Sistema de web scraping para extraer datos de productos de tres tiendas online peruanas. El proyecto destacó por experimentar con diversas metodologías de extracción y parseo: desde el uso directo de IA para la extracción, parseo manual con BeautifulSoup, hasta el refinamiento de datos con Large Language Models (LLMs). Los resultados se estructuraron y guardaron en archivos JSON.
                             </p>
-                            <div class="skills-bubble">
-                                <div>
+                            <div class="bubble">
+                                <div class="bubble-skill">
                                     Python
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    BeautifulSoup
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    JSON
                                 </div>
+                                <div class="bubble-skill">
+                                    IA/LLMs
+                                </div>
+                                
                             </div>
                             <div class="reference">
                                 <a href="#">GitHub</a>
@@ -218,16 +270,20 @@
                             <p>
                                 Desarrollo de una API RESTful diseñada para proporcionar datos geográficos de Perú, incluyendo departamentos, provincias y ciudades. Esta API fue creada principalmente como una herramienta utilitaria para pruebas de desarrollo, permitiendo la validación de campos de ubicación en formularios de registro u otras funcionalidades que requieran datos geográficos reales y estructurados.
                             </p>
-                            <div class="skills-bubble">
-                                <div>
-                                    Python
+                            <div class="bubble">
+                                <div class="bubble-skill">
+                                    PHP
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    Laravel
                                 </div>
-                                <div>
-                                    Python
+                                <div class="bubble-skill">
+                                    MySql
                                 </div>
+                                <div class="bubble-skill">
+                                    API RESTful
+                                </div>
+                                
                             </div>
                             <div class="reference">
                                 <a href="#">GitHub</a>
@@ -290,7 +346,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
     VANTA.DOTS({
-    el: "#backgroulnd",
+    el: "#backgr ound",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
@@ -312,13 +368,11 @@
         strings: ["Ing. Informatico", "Desarrollador de Software", "Desarrollador Backend"],
         typeSpeed: 70,       // Speed of typing
         backSpeed: 40,       // Speed of erasing
-        backDelay: 1500,     // Pause before erasing
+        backDelay: 2000,     // Pause before erasing
         startDelay: 500,     // Delay before typing starts
         loop: true,          // Loop indefinitely
         showCursor: true,    // Show the blinking cursor
         cursorChar: '|',     // Character for the cursor
-        // The library automatically handles maintaining space for the text,
-        // but for the overall container, still consider min-height on .role-title.
     });
 });
     </script>

@@ -218,3 +218,35 @@
   transform: translateX(2px);
   background-color: #506166;
 }
+
+.reference a{
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  color: #515152;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+.reference a:hover{
+color:var(--color-primary);
+}
+
+.reference a:hover .arrow-link{
+  transform: translateY(-4px);
+ }
+ .bubble{
+  margin: 0.8rem 0;
+ }
+
+ 
+ .Lenguages-icons img {
+  font-size: 2.2rem;
+  margin-right: 0.8rem;
+  vertical-align: middle;
+  filter: grayscale(100%) brightness(0.5);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.Lenguages-icons img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%) brightness(1); /* vuelve a color normal */
+}

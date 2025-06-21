@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Check if the section is currently in the viewport
             // We consider it active if its top is less than or equal to scroll position + 100px (or some offset)
             // and its bottom is greater than the scroll position
-            if (window.scrollY >= sectionTop - 150 && window.scrollY < sectionTop + sectionHeight) {
+            if (window.scrollY >= sectionTop - 300 && window.scrollY < sectionTop + sectionHeight) {
                 currentActiveSection = section.id;
                 break; // Found the active section, no need to check further
             }

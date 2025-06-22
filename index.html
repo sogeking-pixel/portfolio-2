@@ -8,53 +8,52 @@
     <link rel="stylesheet" href="static/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    
 
     <title>Portafolio</title>
 </head>
 <body>
 
-    <div id="background"></div>
-    <div class="container-fluid nose">
+    <div class="container-fluid">
 
 
-        <div class="row container m-auto content-row">
+        <div class="row">
 
-            <aside class="left col-6 py-5 d-flex flex-column">
-                <div class="presentation py-5 px-2">
-                    <h1 class="title-presentation">
-                        <span class="first-name">Yerson</span> 
-                        <span class="last-name">Sanchez</span>
-                    </h1>
-
-                    <h2 class="role-title"><span id="changing-text"></span></h2>
-                    <p>I build accessible, pixel-perfect digital experiences for the web.</p>
+            <aside class="left col-2 d-flex flex-column">
+                <div class="buttons-terminal d-flex justify-content-end align-items-start py-3 px-2">
+                    <div class="terminal-button button-red"></div>
+                    <div class="terminal-button button-yellow"></div>
+                    <div class="terminal-button button-green"></div>
                 </div>
-                <div class="nav py-5 px-2 flex-grow-1 overflow-auto">
+                <div class="w-100 d-flex justify-content-center align-items-center py-5 px-5">
+                    <img src="static/perfil.jpg" alt="Logo" class="logo img-fluid cursor-element">
+                </div>
+                <div class="nav px-4 flex-grow-1">
                     <ul>
-                        <li><a  href="#start">Inicio</a></li>
-                        <li class="select-nav"><a  href="#experiences">Experiencia</a></li>
-                        <li><a href="#projects">Projectos</a></li>
-                        <li><a href="#skills">Skills</a></li>
+                        <li class="select-nav"><a href="#start">Inicio</a></li>
+                        <li class="magic-hover magic-hover__square"><a  href="#experiences">Experiencia</a></li>
+                        <li class="magic-hover magic-hover__square"><a href="#projects">Projectos</a></li>
+                        <li class="magic-hover magic-hover__square"><a href="#skills">Skills</a></li>
                     </ul>
                 </div>
 
-                <div class="network py-5 px-2">
-                    <a href="cv.pdf" download class="px-2">Ver CV <svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="network py-5 px-4">
+                    <a href="static/CV.pdf" target="_blank" class="px-2">Ver CV <svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg></a>
                     <div class="network-items py-3">
 
-                        <a href="https://www.linkedin.com/in/yersonsanchez" target="_blank" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/yersonsanchez" target="_blank" aria-label="LinkedIn" class="">
                             <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm15.25 12.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-11h2.89v1.5h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.59v6.47z"/></svg>
                         </a>
-                        <a href="mailto:sanchezleivayerson@gmail.com" aria-label="Correo">
+                        <a href="mailto:sanchezleivayerson@gmail.com" aria-label="Correo" >
                             <svg width="36" height="36" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8.99l8 6.99 8-6.99V18z"/></svg>
                         </a>
                         <a href="https://wa.me/51954566169" target="_blank" aria-label="WhatsApp">
                             <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.64zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-2.651-1.033-5.136-2.901-7.006-1.869-1.871-4.356-2.905-7.006-2.906-5.451 0-9.887 4.434-9.889 9.884-.001 1.956.571 3.86 1.651 5.499l-.999 3.648 3.763-.826zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.366.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                         </a>
-                        <a href="https://github.com/sogeking-pixel" target="_blank" aria-label="GitHub">
-                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                        <a href="https://github.com/sogeking-pixel" target="_blank" aria-label="GitHub" >
+                            <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" ><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
                         </a>
                     </div>
                     
@@ -62,14 +61,35 @@
                 
             </aside >
 
-            <main class="right col-6 d-md-block pt-5">
-                <div class="py-5">
+            <main class="right col-10 px-5">
+                <div class=" container px-5">
 
-                    <section class="about-me pb-5 mb-5 mt-4" id="start">
-                        Soy un desarrollador apasionado por construir sistemas backend robustos, escalables y eficientes. Mi trabajo se centra en diseñar arquitecturas sólidas, optimizar bases de datos y desarrollar APIs de alto rendimiento que impulsan experiencias de usuario excepcionales. Disfruto resolviendo desafíos complejos y construyendo soluciones con un enfoque en la confiabilidad y la performance.
+                    <section class="about-me d-flex align-items-center" id="start">
+                        <div class="row">
+                            <div class="col-6 justify-content-center d-flex flex-column">
+                                <div class="presentation px-2">
+                                    <h1 class="title-presentation">
+                                        <span class="first-name">Yerson</span> 
+                                        <span class="last-name">Sanchez</span>
+                                    </h1>        
+                                    <h2 class="role-title"><span id="changing-text"></span></h2>
+                                    <p class="py-4">
+                                        Soy un desarrollador apasionado por construir sistemas backend robustos, escalables y eficientes. Mi trabajo se centra en diseñar arquitecturas sólidas, optimizar bases de datos y desarrollar APIs de alto rendimiento que impulsan experiencias de usuario excepcionales. Disfruto resolviendo desafíos complejos y construyendo soluciones con un enfoque en la confiabilidad y la performance.
+            
+                                    </p>
+                                </div>
+                                
+                            </div>
+                            <div class="col-6">
+                                <div id="background" class="img-fluid"></div>
+                            </div>
+                        </div>
+                       
+                       
                     </section>
     
-                    <section class="timeline my-5 py-2 mx-2" id="experiences">
+                    <section class="timeline my-5 py-5 justify-content-center mx-auto" id="experiences">
+
                         <div class="line"></div>
 
                         <div class="work pb-5 mb-4">
@@ -144,8 +164,8 @@
     
                     </section>
     
-                    <section class="projects my-5 py-5" id="projects">
-                        <div class="project my-5">
+                    <section class="projects my-5 py-5 " id="projects">
+                        <div class="project my-5 mx-auto">
                             <h3>Server HTTP desde Cero</h3>
                             <p>
                                 Desarrollé un servidor HTTP funcional en Java, implementando manualmente la pila de protocolos HTTP/1.1 para manejar solicitudes y respuestas a bajo nivel. Este proyecto implicó el análisis y procesamiento directo de peticiones HTTP, la construcción estructurada de respuestas, y la gestión eficiente de conexiones y concurrencia. Gracias a esta experiencia, profundicé significativamente en el funcionamiento interno de la comunicación web, incluyendo la forma en que los navegadores y servidores intercambian información en tiempo real.
@@ -169,7 +189,7 @@
                             </div>
                             
                         </div>
-                        <div class="project my-5">
+                        <div class="project my-5 mx-auto">
                             <h3>Servidor DNS desde Cero</h3>
                             <p>
                                 Implementación de un servidor DNS en Java para resolver nombres de dominio a direcciones IP, manejando diferentes tipos de registros DNS. El proyecto requirió el parseo y la construcción manual de paquetes DNS, trabajando a nivel de bytes, lo cual me permitió comprender en profundidad el funcionamiento interno del protocolo DNS. Además, reforzó mis conocimientos sobre protocolos de red, el uso de UDP y el proceso completo de resolución de nombres en Internet.                               
@@ -193,7 +213,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="project my-5">
+                        <div class="project my-5 mx-auto">
                             <h3>Sistema de Gestión de Biblioteca Virtual</h3>
                             <p>
                                 Desarrollé una aplicación web completa de gestión de biblioteca en Django (Python) con PostgreSQL, implementando funcionalidades CRUD robustas para libros, usuarios y préstamos. Implementé un sistema de autenticación y autorización basado en roles para diferentes tipos de usuarios (administradores, bibliotecarios, usuarios regulares).Demuestra mi habilidad en el desarrollo web full-stack (enfocado en el backend con Django), diseño de bases de datos relacionales con PostgreSQL y el uso del ORM.
@@ -225,7 +245,7 @@
                                 </svg></a>
                             </div>
                         </div>
-                        <div class="project my-5">
+                        <div class="project my-5 mx-auto">
                             <h3>API RESTful de Gestión de Inventario</h3>
                             <p>
                                 Desarrollo de una API RESTful para la gestión de inventario, incluyendo funcionalidades CRUD para productos y categorías. Implementé un sistema de autenticación y autorización seguro con JWT, incluyendo refresh tokens y gestión de sesiones, para proteger los endpoints y garantizar la integridad de los datos. Utilicé MongoDB como base de datos NoSQL, aprovechando su flexibilidad para modelar esquemas dinámicos adaptados a las necesidades cambiantes de productos y categorías.
@@ -254,7 +274,7 @@
                                   </svg></a>
                             </div>
                         </div>
-                        <div class="project my-5">
+                        <div class="project my-5 mx-auto">
                             <h3>Web Scraping Tiendas de Tecnologias Peru</h3>
                             <p>
                                 Desarrollé un sistema de web scraping para extraer información de productos desde tres tiendas online peruanas. Implementé y comparé diversas estrategias de extracción y análisis, utilizando desde herramientas tradicionales como BeautifulSoup para el parseo estructural, hasta técnicas basadas en IA y modelos de lenguaje (LLMs) para la extracción inteligente de datos no estructurados.  Los datos obtenidos fueron normalizados, estructurados en formato JSON y preparados para su posterior análisis o integración en bases de datos, demostrando capacidad para manejar desafíos de variabilidad de datos y eficiencia en la extracción.
@@ -280,7 +300,7 @@
                                   </svg></a>
                             </div>
                         </div>
-                        <div class="project my-5">
+                        <div class="project my-5 mx-auto">
                             <h3>API RESTful de Geografía Peruana</h3>
                             <p>
                                 Desarrollé una API RESTful para proporcionar datos geográficos estructurados del Perú, incluyendo departamentos, provincias y ciudades. Esta API fue diseñada como una herramienta utilitaria para entornos de desarrollo, facilitando la validación de campos de ubicación en formularios de registro u otras funcionalidades que requieran información geográfica real y jerárquicamente organizada.
@@ -373,30 +393,29 @@
             
         </div>
     </div>
+    <div class="custom-cursor"></div>
 
+    <script src="/static/mouse.js"></script>
 
-    <script src="static/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="/static/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
-    VANTA.DOTS({
-    el: "#backgr ound",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x748f97,
-    color2: 0xfffdfd,
-    backgroundColor: 0xfffdfd,
-    size: 3,
-    spacing: 35.00,
-    showLines: false
-    })
+        VANTA.TRUNK({
+        el: "#background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x6b8787,
+        backgroundColor: 0xffffff
+      })
     </script>
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('#changing-text', {

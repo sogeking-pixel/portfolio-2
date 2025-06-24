@@ -149,6 +149,7 @@
   .title-presentation{
     font-size: 3.8rem;
     font-weight: 900;
+    letter-spacing: -3px;
   }
 
  .first-name{
@@ -255,15 +256,16 @@
 
  .line-node{
   background-color: var(--color-primary);
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  left: -6px;
+  width: 16px;
+  height: 16px;
+  left: -3px;
   position: absolute;
  }
  .work{
   max-width: 600px;
  }
+
+
  .title-work{
   color: var(--color-secondary);
   font-weight: 600;
@@ -282,14 +284,49 @@
   max-width: 700px;;
  }
 
-.line {
+ .lines-wrapper {
   position: absolute;
-  left: 0;
   top: 0;
   bottom: 0;
-  width: 3px;
-  background: var(--color-primary);
+  width: 10px;
+  pointer-events: none;
 }
+
+.lines-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.line {
+  position: absolute;
+  top: -2%;
+  height: 100%;
+  width: 1px;
+  background: #5d7777;
+  opacity: 0.8;
+  left: calc(20% + var(--i) * 10%);
+  animation: sway 3s ease-in-out infinite alternate;
+  animation-delay: calc(var(--i) * -0.7s);
+}
+
+@keyframes sway {
+  0% {
+    transform: translateX(0px) scaleY(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateX(4px) scaleY(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-4px) scaleY(1);
+    opacity: 0.6;
+  }
+}
+
+
+
 .project {
   max-width: 600px;
   padding: 2rem;

@@ -1,64 +1,72 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('.nav ul li a');
-    const sections = document.querySelectorAll('section[id]'); // Selects all <section> elements that have an 'id' attribute
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll(".section");
 
-    function activateNavLink() {
-        let currentActiveSection = '';
+  /**
+   * Función para el desplazamiento suave cuando se hace clic en un enlace de navegación.
+   */
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // Previene el comportamiento predeterminado del enlace (salto instantáneo)
+    const targetId = this.querySelector("a").getAttribute("href");
+      // Encuentra la sección de destino en el DOM
+      const targetSection = document.querySelector(targetId);
 
-        // Iterate backwards through sections to find the one currently in view
-        // This helps handle cases where the top of a section is just out of view
-        for (let i = sections.length - 1; i >= 0; i--) {
-            const section = sections[i];
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
+      if (targetSection) {
+        // Calcula la posición superior a la que se debe desplazar la ventana.
+        // Resta la altura de la barra de navegación fija para que la sección no quede oculta.
+        const offsetTop = targetSection.offsetTop ;
 
-            // Check if the section is currently in the viewport
-            // We consider it active if its top is less than or equal to scroll position + 100px (or some offset)
-            // and its bottom is greater than the scroll position
-            if (window.scrollY >= sectionTop - 300 && window.scrollY < sectionTop + sectionHeight) {
-                currentActiveSection = section.id;
-                break; // Found the active section, no need to check further
-            }
-        }
-
-        // Remove 'select-nav' from all list items
-        navLinks.forEach(link => {
-            link.parentElement.classList.remove('select-nav');
+        // Realiza el desplazamiento suave usando la API nativa de scrollIntoView
+        // 'behavior: "smooth"' proporciona una animación de desplazamiento suave.
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
         });
-
-        // Add 'select-nav' to the corresponding list item
-        if (currentActiveSection) {
-            const activeLink = document.querySelector(`.nav ul li a[href="#${currentActiveSection}"]`);
-            if (activeLink) {
-                activeLink.parentElement.classList.add('select-nav');
-            }
-        }
-    }
-
-    // Call on page load to set initial active state
-    activateNavLink();
-
-    // Attach scroll event listener
-    window.addEventListener('scroll', activateNavLink);
-
-    // Optional: Add click listener to smoothly scroll to section and update active state immediately
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent default jump
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-
-            if (targetSection) {
-                // Scroll smoothly to the target section
-                window.scrollTo({
-                    top: targetSection.offsetTop - 50, // Adjust offset as needed (e.g., for a fixed header)
-                    behavior: 'smooth'
-                });
-
-                // Manually update the active class right after clicking
-                navLinks.forEach(l => l.parentElement.classList.remove('select-nav'));
-                this.parentElement.classList.add('select-nav');
-            }
-        });
+      }
     });
+  });
+
+  /**
+   * Función para resaltar el enlace de navegación de la sección actualmente visible.
+   */
+  function highlightActiveSection() {
+    let currentActiveSectionId = ""; // Variable para almacenar el ID de la sección activa
+
+    // Itera sobre cada sección para determinar cuál está actualmente visible
+    sections.forEach((section) => {
+      // Calcula la posición superior de la sección, ajustada por la altura del nav
+      const sectionTop = section.offsetTop;
+      // Calcula la altura total de la sección
+      const sectionHeight = section.clientHeight;
+
+      if (
+        window.scrollY >= sectionTop &&
+        window.scrollY < sectionTop + sectionHeight
+      ) {
+        currentActiveSectionId = "#" + section.id; // Almacena el ID de la sección activa
+      }
+    });
+
+    // Primero, remueve la clase 'active' de todos los enlaces de navegación
+    navLinks.forEach((link) => {
+      link.classList.remove("select-nav"); // Remueve la clase 'active'
+    });
+
+    // Si se encontró una sección activa, añade la clase 'active' al enlace correspondiente
+    if (currentActiveSectionId) {
+      navLinks.forEach((link) => {
+        const anchor = link.querySelector("a");
+        if (anchor && anchor.getAttribute("href") === currentActiveSectionId) {
+          link.classList.add("select-nav");
+        }
+      });
+    }
+  }
+
+  // Añade un listener al evento 'scroll' de la ventana para actualizar la sección activa
+  window.addEventListener("scroll", highlightActiveSection);
+
+  // Llama a la función una vez al cargar la página para establecer la sección inicial
+  highlightActiveSection();
 });

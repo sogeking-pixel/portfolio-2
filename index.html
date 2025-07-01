@@ -30,10 +30,10 @@
                 </div>
                 <div class="nav px-4 flex-grow-1">
                     <ul>
-                        <li class="select-nav"><a href="#start">Inicio</a></li>
-                        <li class="magic-hover magic-hover__square"><a  href="#experiences">Experiencia</a></li>
-                        <li class="magic-hover magic-hover__square"><a href="#projects">Projectos</a></li>
-                        <li class="magic-hover magic-hover__square"><a href="#skills">Skills</a></li>
+                        <li class="nav-link"><a href="#start">Inicio</a></li>
+                        <li class="nav-link"><a  href="#experiences">Experiencia</a></li>
+                        <li class="nav-link"><a href="#projects">Projectos</a></li>
+                        <li class="nav-link"><a href="#skills">Skills</a></li>
                     </ul>
                 </div>
 
@@ -64,7 +64,7 @@
             <main class="right col-10 px-5 mb-4">
                 <div class=" container px-5">
 
-                    <section class="about-me d-flex align-items-center flex-column" id="start">
+                    <section class="about-me d-flex align-items-center flex-column section" id="start">
                         <div class="row">
                             <div class="col-6 justify-content-center d-flex flex-column">
                                 <div class="presentation px-2">
@@ -96,378 +96,403 @@
                        
                     </section>
                     
-                    <h1 class="text-center title-section">Experiencia</h1>
-                    <section class="timeline my-5 py-5 justify-content-center mx-auto" id="experiences">
-                        
-                        <div class="lines-wrapper">
-                            <div class="lines-container">
-                              <div class="line" style="--i: 0;"></div>
-                              <div class="line" style="--i: 1;"></div>
-                              <div class="line" style="--i: 2;"></div>
-                              <div class="line" style="--i: 3;"></div>
-
+                    
+                    <section class="timeline py-5 justify-content-center mx-auto section" id="experiences">
+                        <h1 class="text-center title-section">Experiencia</h1>
+                        <div class="body-section py-4">
+                            <div class="lines-wrapper">
+                                <div class="lines-container">
+                                  <div class="line" style="--i: 0;"></div>
+                                  <div class="line" style="--i: 1;"></div>
+                                  <div class="line" style="--i: 2;"></div>
+                                  <div class="line" style="--i: 3;"></div>
+    
+                                </div>
                             </div>
-                        </div>
-                        <div class="work mb-5 pb-3">
-                            <div class="line-node"></div>
-                            <div class="content-work ps-5">
-                                <h3 class="title-work">Practicante de Machine Learning</h3>
-                                <h4 class="place-work">Universidad Nacional de Trujillo</h4>
-                                <h4 class="date-work">09/2024 - 12/2024</h4>
-                                <div class="my-3">
-                                    <p>
-                                        Desarrollé un modelo de predicción del Índice Niño 1+2 usando redes convolucionales <code>(CNN)</code>  y datos satelitales de temperatura del mar <code>(SST)</code>.
-                                    </p>
-                                    <ul>
-                                        <li>Colaboré en el diseño de estrategias de limpieza y estructuración de datos meteorológicos.</li>
-                                        <li>Procesé y reduje mapas de calor en formato <code>.nc </code> mediante agrupación por zonas significativas para mejorar el rendimiento del modelo</li>
-                                        <li> Implementé la preparación de datos temporales en formato multicanal y construí la arquitectura del modelo con salida de predicción del Indice Niño 1+2 para 12 meses futuros.</li>                      
-                                    </ul>
+                            <div class="work mb-5 pt-5 pb-3">
+                                <div class="line-node"></div>
+                                <div class="content-work ps-5">
+                                    <h3 class="title-work">Practicante de Machine Learning</h3>
+                                    <h4 class="place-work">Universidad Nacional de Trujillo</h4>
+                                    <h4 class="date-work">09/2024 - 12/2024</h4>
+                                    <div class="my-3">
+                                        <p>
+                                            Desarrollé un modelo de predicción del Índice Niño 1+2 usando redes convolucionales <code>(CNN)</code>  y datos satelitales de temperatura del mar <code>(SST)</code>.
+                                        </p>
+                                        <ul>
+                                            <li>Colaboré en el diseño de estrategias de limpieza y estructuración de datos meteorológicos.</li>
+                                            <li>Procesé y reduje mapas de calor en formato <code>.nc </code> mediante agrupación por zonas significativas para mejorar el rendimiento del modelo</li>
+                                            <li> Implementé la preparación de datos temporales en formato multicanal y construí la arquitectura del modelo con salida de predicción del Indice Niño 1+2 para 12 meses futuros.</li>                      
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bubble">
+                                        <div class="bubble-skill">
+                                            Python
+                                        </div>
+                                        <div class="bubble-skill">
+                                            TensorFlow
+                                        </div>
+                                        <div class="bubble-skill">
+                                            Pandas
+                                        </div>
+                                        <div class="bubble-skill">
+                                            Numpy
+                                        </div>
+                                        <div class="bubble-skill">
+                                            Matplolib
+                                        </div>
+                                    </div>
+    
+                                </div>                           
+                            </div>
+    
+                            <div class="work pt-5">
+                                <div class="line-node"></div>
+                                <div class="content-work ps-5">
+                                    <h3 class="title-work">Desarrollador de Software</h3>
+                                    <h4 class="place-work">Universidad Nacional de Trujillo</h4>
+                                    <h4 class="date-work">10/2023 - 03/2024</h4>
+                                    <div class="my-3">
+                                        <p>
+                                            Desarrollé un sistema bibliotecario interno para uso exclusivo en la universidad.
+                                            
+                                        </p>
+                                        <ul>
+                                            <li>Trabajé en el diseño e implementación de la base de datos en <code>MySQL</code>, integrando procedimientos almacenados, transacciones, vistas, índices y consultas optimizadas para mejorar el rendimiento.</li>
+                                            <li>Diseñé e implementé una <code>APIs REST</code> con <code>PHP</code>, incluyendo autenticación segura de usuarios utilizando <code>JWT</code>.</li>
+                                            <li>Contribuí al desarrollo del frontend, mejorando la interacción del usuario con las funcionalidades de libros, préstamos y perfiles.</li>
+                                            <li>Colaboré en la configuración de acceso restringido por <code>IP</code> y <code>VLAN</code>, asegurando que el sistema solo pudiera ser utilizado dentro de la red universitaria</li>                      
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="bubble">
+                                        <div class="bubble-skill">
+                                            PHP
+                                        </div>
+                                        <div class="bubble-skill">
+                                            Api RESTful
+                                        </div>
+                                        <div class="bubble-skill">
+                                            MySql
+                                        </div>
+                                        <div class="bubble-skill">
+                                            JWT
+                                        </div>                                   
+                                        <div class="bubble-skill">
+                                            JavaScript
+                                        </div>
+                                        <div class="bubble-skill">
+                                            Bootstrap
+                                        </div>
+                                        <div class="bubble-skill">
+                                            JQuery
+                                        </div>
+                                    </div>
                                 </div>
                                 
+                            </div>
+
+                        </div>
+                        
+    
+                    </section>
+
+                    
+                    <section class="projects  py-5 section" id="projects">
+                        <h1 class="text-center title-section">Projectos</h1>
+                        <div class="body-section">
+                            <div class="lines-wrapper my-5">
+                                <div class="lines-container">
+                                  <div class="line" style="--i: 0;"></div>
+                                  <div class="line" style="--i: 1;"></div>
+                                  <div class="line" style="--i: 2;"></div>
+                                  <div class="line" style="--i: 3;"></div>
+                                  <div class="line" style="--i: 4;"></div>
+                                  <div class="line" style="--i: 5;"></div>
+                                  <div class="line" style="--i: 6;"></div>
+    
+                                </div>
+                            </div>
+                            <div class="project my-5 mx-auto">
+                                <h3>Server HTTP desde Cero</h3>
+                                <p>
+                                    Desarrollé un servidor HTTP funcional en Java, implementando manualmente la pila de protocolos HTTP/1.1 para manejar solicitudes y respuestas a bajo nivel. Este proyecto implicó el análisis y procesamiento directo de peticiones HTTP, la construcción estructurada de respuestas, y la gestión eficiente de conexiones y concurrencia. Gracias a esta experiencia, profundicé significativamente en el funcionamiento interno de la comunicación web, incluyendo la forma en que los navegadores y servidores intercambian información en tiempo real.
+                                </p>
+                                <div class="bubble">
+                                    <div class="bubble-skill">
+                                        Java
+                                    </div>
+                                    <div class="bubble-skill">
+                                        Sockets
+                                    </div>
+                                    <div class="bubble-skill">
+                                        TCP
+                                    </div>
+                                    
+                                </div>
+                                <div class="reference">
+                                    <a href="https://github.com/sogeking-pixel/ServerHttp" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg></a>
+                                </div>
+                                
+                            </div>
+                            <div class="project my-5 mx-auto">
+                                <h3>Servidor DNS desde Cero</h3>
+                                <p>
+                                    Implementación de un servidor DNS en Java para resolver nombres de dominio a direcciones IP, manejando diferentes tipos de registros DNS. El proyecto requirió el parseo y la construcción manual de paquetes DNS, trabajando a nivel de bytes, lo cual me permitió comprender en profundidad el funcionamiento interno del protocolo DNS. Además, reforzó mis conocimientos sobre protocolos de red, el uso de UDP y el proceso completo de resolución de nombres en Internet.                               
+                                </p>
+                                <div class="bubble">
+                                    <div class="bubble-skill">
+                                        Java
+                                    </div>
+                                    <div class="bubble-skill">
+                                        Sockets
+                                    </div>
+                                    <div class="bubble-skill">
+                                        UDP
+                                    </div>
+                                    
+                                </div>
+                                <div class="reference">
+                                    <a href="https://github.com/sogeking-pixel/Server-DNS" target="_blank" rel="noopener">GitHub  <svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project my-5 mx-auto">
+                                <h3>Sistema de Gestión de Biblioteca Virtual</h3>
+                                <p>
+                                    Desarrollé una aplicación web completa de gestión de biblioteca en Django (Python) con PostgreSQL, implementando funcionalidades CRUD robustas para libros, usuarios y préstamos. Implementé un sistema de autenticación y autorización basado en roles para diferentes tipos de usuarios (administradores, bibliotecarios, usuarios regulares).Demuestra mi habilidad en el desarrollo web full-stack (enfocado en el backend con Django), diseño de bases de datos relacionales con PostgreSQL y el uso del ORM.
+                                </p>
                                 <div class="bubble">
                                     <div class="bubble-skill">
                                         Python
                                     </div>
                                     <div class="bubble-skill">
-                                        TensorFlow
+                                        Django
                                     </div>
                                     <div class="bubble-skill">
-                                        Pandas
+                                        PostgreSQL
                                     </div>
-                                    <div class="bubble-skill">
-                                        Numpy
-                                    </div>
-                                    <div class="bubble-skill">
-                                        Matplolib
-                                    </div>
-                                </div>
-
-                            </div>                           
-                        </div>
-
-                        <div class="work pt-5">
-                            <div class="line-node"></div>
-                            <div class="content-work ps-5">
-                                <h3 class="title-work">Desarrollador de Software</h3>
-                                <h4 class="place-work">Universidad Nacional de Trujillo</h4>
-                                <h4 class="date-work">10/2023 - 03/2024</h4>
-                                <div class="my-3">
-                                    <p>
-                                        Desarrollé un sistema bibliotecario interno para uso exclusivo en la universidad.
-                                        
-                                    </p>
-                                    <ul>
-                                        <li>Trabajé en el diseño e implementación de la base de datos en <code>MySQL</code>, integrando procedimientos almacenados, transacciones, vistas, índices y consultas optimizadas para mejorar el rendimiento.</li>
-                                        <li>Diseñé e implementé una <code>APIs REST</code> con <code>PHP</code>, incluyendo autenticación segura de usuarios utilizando <code>JWT</code>.</li>
-                                        <li>Contribuí al desarrollo del frontend, mejorando la interacción del usuario con las funcionalidades de libros, préstamos y perfiles.</li>
-                                        <li>Colaboré en la configuración de acceso restringido por <code>IP</code> y <code>VLAN</code>, asegurando que el sistema solo pudiera ser utilizado dentro de la red universitaria</li>                      
-                                    </ul>
-                                </div>
-                                
-                                <div class="bubble">
-                                    <div class="bubble-skill">
-                                        PHP
-                                    </div>
-                                    <div class="bubble-skill">
-                                        Api RESTful
-                                    </div>
-                                    <div class="bubble-skill">
-                                        MySql
-                                    </div>
-                                    <div class="bubble-skill">
-                                        JWT
-                                    </div>                                   
                                     <div class="bubble-skill">
                                         JavaScript
                                     </div>
                                     <div class="bubble-skill">
                                         Bootstrap
                                     </div>
+                                    
+                                </div>
+                                <div class="reference">
+                                    <a href="https://github.com/sogeking-pixel/sis_bibliotecario_django" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg></a>
+                                    <a href="https://sis-bibliotecario-django.onrender.com/" target="_blank" rel="noopener">Demo<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></a>
+                                </div>
+                            </div>
+                            <div class="project my-5 mx-auto">
+                                <h3>API RESTful de Gestión de Inventario</h3>
+                                <p>
+                                    Desarrollo de una API RESTful para la gestión de inventario, incluyendo funcionalidades CRUD para productos y categorías. Implementé un sistema de autenticación y autorización seguro con JWT, incluyendo refresh tokens y gestión de sesiones, para proteger los endpoints y garantizar la integridad de los datos. Utilicé MongoDB como base de datos NoSQL, aprovechando su flexibilidad para modelar esquemas dinámicos adaptados a las necesidades cambiantes de productos y categorías.
+                                </p>
+                                <div class="bubble">
                                     <div class="bubble-skill">
-                                        JQuery
+                                        Python
                                     </div>
+                                    <div class="bubble-skill">
+                                        Flask
+                                    </div>
+                                    <div class="bubble-skill">
+                                        JWT
+                                    </div>
+                                    <div class="bubble-skill">
+                                        MongoDB
+                                    </div>
+                                    <div class="bubble-skill">
+                                        Api RESTful
+                                    </div>
+                                    
+                                </div>
+                                <div class="reference">
+                                    <a href="https://github.com/sogeking-pixel/API-INVENTARIO" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg></a>
                                 </div>
                             </div>
-                            
+                            <div class="project my-5 mx-auto">
+                                <h3>Web Scraping Tiendas de Tecnologias Peru</h3>
+                                <p>
+                                    Desarrollé un sistema de web scraping para extraer información de productos desde tres tiendas online peruanas. Implementé y comparé diversas estrategias de extracción y análisis, utilizando desde herramientas tradicionales como BeautifulSoup para el parseo estructural, hasta técnicas basadas en IA y modelos de lenguaje (LLMs) para la extracción inteligente de datos no estructurados.  Los datos obtenidos fueron normalizados, estructurados en formato JSON y preparados para su posterior análisis o integración en bases de datos, demostrando capacidad para manejar desafíos de variabilidad de datos y eficiencia en la extracción.
+                                </p>
+                                <div class="bubble">
+                                    <div class="bubble-skill">
+                                        Python
+                                    </div>
+                                    <div class="bubble-skill">
+                                        BeautifulSoup
+                                    </div>
+                                    <div class="bubble-skill">
+                                        JSON
+                                    </div>
+                                    <div class="bubble-skill">
+                                        IA/LLMs
+                                    </div>
+                                    
+                                </div>
+                                <div class="reference">
+                                    <a href="https://github.com/sogeking-pixel/learn_scraping" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg></a>
+                                </div>
+                            </div>
+                            <div class="project my-5 mx-auto">
+                                <h3>API RESTful de Geografía Peruana</h3>
+                                <p>
+                                    Desarrollé una API RESTful para proporcionar datos geográficos estructurados del Perú, incluyendo departamentos, provincias y ciudades. Esta API fue diseñada como una herramienta utilitaria para entornos de desarrollo, facilitando la validación de campos de ubicación en formularios de registro u otras funcionalidades que requieran información geográfica real y jerárquicamente organizada.
+                                </p>
+                                <div class="bubble">
+                                    <div class="bubble-skill">
+                                        PHP
+                                    </div>
+                                    <div class="bubble-skill">
+                                        Laravel
+                                    </div>
+                                    <div class="bubble-skill">
+                                        MySql
+                                    </div>
+                                    <div class="bubble-skill">
+                                        API RESTful
+                                    </div>
+                                    
+                                </div>
+                                <div class="reference">
+                                    <a href="https://github.com/sogeking-pixel/api-ubigeo" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg></a>
+                                </div>
+                            </div>
                         </div>
+                        
+                    </section>
+                    
+                    
+                    <section class="skills  py-5 mx-auto section" id="skills">
+                        <h1 class="text-center title-section" >Skills</h1>
+                        <div class="body-section">
+                            <div class="lines-wrapper my-5">
+                                <div class="lines-container">
+                                  <div class="line" style="--i: 0;"></div>
+                                  <div class="line" style="--i: 1;"></div>
+                                  <div class="line" style="--i: 2;"></div>
+                                  <div class="line" style="--i: 3;"></div>
+                                  <div class="line" style="--i: 4;"></div>
+                                  <div class="line" style="--i: 5;"></div>
+                                  <div class="line" style="--i: 6;"></div>
     
-                    </section>
+                                </div>
+                            </div>
+                            <!-- Lenguajes -->
+                            <div class="group-skills my-5 mx-auto">
+                                <h3><i class="fas fa-code me-2"></i> Lenguajes</h3>
+                                <div class="Lenguages-icons my-2">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java" alt="Java" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" title="C#" alt="C#" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" title="Kotlin" alt="Kotlin" width="35">
+    
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" title="PHP" alt="PHP" width="35">
+                                </div>
+                            </div>
+                        
+                            <!-- Frameworks -->
+                            <div class="group-skills my-5mx-auto">
+                                <h3><i class="fas fa-layer-group me-2"></i> Frameworks Backend</h3>
+                                <div class="Lenguages-icons my-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" title="Spring Boot" alt="Spring Boot" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" title="Django" alt="Django" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" title="Flask" alt="Flask" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" title="Laravel" alt="Laravel" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" title=".NET Core" alt=".NET Core" width="35">
+                                </div>
+                            </div>
+                        
+                            <!-- Base de Datos -->
+                            <div class="group-skills my-5 mx-auto">
+                                <h3><i class="fas fa-database me-2"></i> Base de Datos</h3>
+                                <div class="Lenguages-icons my-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySQL" alt="MySQL" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" title="MongoDB" alt="MongoDB" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title="PostgreSQL" alt="PostgreSQL" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" title="SQLite" alt="SQLite" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" title="MariaDB" alt="MariaDB" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" title="Redis" alt="Redis" width="35">
+                                </div>
+                            </div>
+                        
+                            <!-- Herramientas -->
+                            <div class="group-skills my-5 mx-auto">
+                                <h3><i class="fas fa-tools me-2"></i> Herramientas</h3>
+                                <div class="Lenguages-icons my-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="VS Code" alt="VS Code" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" title="Postman" alt="Postman" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" title="IntelliJ IDEA" alt="IntelliJ" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" title="Visual Studio" alt="Visual Studio" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="35">
+                                </div>
+                            </div>
+                        
+                            <!-- Cloud / DevOps -->
+                            <div class="group-skills my-5 mx-auto">
+                                <h3><i class="fas fa-cloud me-2"></i> Cloud / DevOps</h3>
+                                <div class="Lenguages-icons my-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" title="Firebase" alt="Firebase" width="35">
+                                    <img src="https://cdn.simpleicons.org/googlecloud/4285F4" title="Google Cloud" alt="Google Cloud" width="35">
+    
+    
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker" alt="Docker" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub Actions" alt="GitHub Actions" width="35">
+                                    <!-- Puedes añadir íconos de AWS, Azure si los usas -->
+                                </div>
+                            </div>
+                        
+                            <!-- Ciencia de Datos / IA -->
+                            <div class="group-skills my-5mx-auto">
+                                <h3><i class="fas fa-brain me-2"></i> Ciencia de Datos / IA</h3>
+                                <div class="Lenguages-icons my-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" title="TensorFlow" alt="TensorFlow" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" title="NumPy" alt="NumPy" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" title="Pandas" alt="Pandas" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" title="Jupyter Notebook" alt="Jupyter" width="35">
+                                </div>
+                            </div>
+                        
+                            <!-- Frontend -->
+                            <div class="group-skills my-5 mx-auto">
+                                <h3><i class="fas fa-paint-brush me-2"></i> Frontend</h3>
+                                <div class="Lenguages-icons my-3">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" alt="Bootstrap" width="35">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" title="Tailwind CSS" alt="Tailwind" width="35">
+                                    <!-- Si usas React, puedes añadirlo aquí también -->
+                                </div>
+                            </div>
 
-                    <h1 class="text-center title-section">Projectos</h1>
-                    <section class="projects my-5" id="projects">
-                        <div class="lines-wrapper my-5">
-                            <div class="lines-container">
-                              <div class="line" style="--i: 0;"></div>
-                              <div class="line" style="--i: 1;"></div>
-                              <div class="line" style="--i: 2;"></div>
-                              <div class="line" style="--i: 3;"></div>
-                              <div class="line" style="--i: 4;"></div>
-                              <div class="line" style="--i: 5;"></div>
-                              <div class="line" style="--i: 6;"></div>
-
-                            </div>
                         </div>
-                        <div class="project my-5 mx-auto">
-                            <h3>Server HTTP desde Cero</h3>
-                            <p>
-                                Desarrollé un servidor HTTP funcional en Java, implementando manualmente la pila de protocolos HTTP/1.1 para manejar solicitudes y respuestas a bajo nivel. Este proyecto implicó el análisis y procesamiento directo de peticiones HTTP, la construcción estructurada de respuestas, y la gestión eficiente de conexiones y concurrencia. Gracias a esta experiencia, profundicé significativamente en el funcionamiento interno de la comunicación web, incluyendo la forma en que los navegadores y servidores intercambian información en tiempo real.
-                            </p>
-                            <div class="bubble">
-                                <div class="bubble-skill">
-                                    Java
-                                </div>
-                                <div class="bubble-skill">
-                                    Sockets
-                                </div>
-                                <div class="bubble-skill">
-                                    TCP
-                                </div>
-                                
-                            </div>
-                            <div class="reference">
-                                <a href="https://github.com/sogeking-pixel/ServerHttp" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg></a>
-                            </div>
-                            
-                        </div>
-                        <div class="project my-5 mx-auto">
-                            <h3>Servidor DNS desde Cero</h3>
-                            <p>
-                                Implementación de un servidor DNS en Java para resolver nombres de dominio a direcciones IP, manejando diferentes tipos de registros DNS. El proyecto requirió el parseo y la construcción manual de paquetes DNS, trabajando a nivel de bytes, lo cual me permitió comprender en profundidad el funcionamiento interno del protocolo DNS. Además, reforzó mis conocimientos sobre protocolos de red, el uso de UDP y el proceso completo de resolución de nombres en Internet.                               
-                            </p>
-                            <div class="bubble">
-                                <div class="bubble-skill">
-                                    Java
-                                </div>
-                                <div class="bubble-skill">
-                                    Sockets
-                                </div>
-                                <div class="bubble-skill">
-                                    UDP
-                                </div>
-                                
-                            </div>
-                            <div class="reference">
-                                <a href="https://github.com/sogeking-pixel/Server-DNS" target="_blank" rel="noopener">GitHub  <svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="project my-5 mx-auto">
-                            <h3>Sistema de Gestión de Biblioteca Virtual</h3>
-                            <p>
-                                Desarrollé una aplicación web completa de gestión de biblioteca en Django (Python) con PostgreSQL, implementando funcionalidades CRUD robustas para libros, usuarios y préstamos. Implementé un sistema de autenticación y autorización basado en roles para diferentes tipos de usuarios (administradores, bibliotecarios, usuarios regulares).Demuestra mi habilidad en el desarrollo web full-stack (enfocado en el backend con Django), diseño de bases de datos relacionales con PostgreSQL y el uso del ORM.
-                            </p>
-                            <div class="bubble">
-                                <div class="bubble-skill">
-                                    Python
-                                </div>
-                                <div class="bubble-skill">
-                                    Django
-                                </div>
-                                <div class="bubble-skill">
-                                    PostgreSQL
-                                </div>
-                                <div class="bubble-skill">
-                                    JavaScript
-                                </div>
-                                <div class="bubble-skill">
-                                    Bootstrap
-                                </div>
-                                
-                            </div>
-                            <div class="reference">
-                                <a href="https://github.com/sogeking-pixel/sis_bibliotecario_django" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg></a>
-                                <a href="https://sis-bibliotecario-django.onrender.com/" target="_blank" rel="noopener">Demo<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg></a>
-                            </div>
-                        </div>
-                        <div class="project my-5 mx-auto">
-                            <h3>API RESTful de Gestión de Inventario</h3>
-                            <p>
-                                Desarrollo de una API RESTful para la gestión de inventario, incluyendo funcionalidades CRUD para productos y categorías. Implementé un sistema de autenticación y autorización seguro con JWT, incluyendo refresh tokens y gestión de sesiones, para proteger los endpoints y garantizar la integridad de los datos. Utilicé MongoDB como base de datos NoSQL, aprovechando su flexibilidad para modelar esquemas dinámicos adaptados a las necesidades cambiantes de productos y categorías.
-                            </p>
-                            <div class="bubble">
-                                <div class="bubble-skill">
-                                    Python
-                                </div>
-                                <div class="bubble-skill">
-                                    Flask
-                                </div>
-                                <div class="bubble-skill">
-                                    JWT
-                                </div>
-                                <div class="bubble-skill">
-                                    MongoDB
-                                </div>
-                                <div class="bubble-skill">
-                                    Api RESTful
-                                </div>
-                                
-                            </div>
-                            <div class="reference">
-                                <a href="https://github.com/sogeking-pixel/API-INVENTARIO" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg></a>
-                            </div>
-                        </div>
-                        <div class="project my-5 mx-auto">
-                            <h3>Web Scraping Tiendas de Tecnologias Peru</h3>
-                            <p>
-                                Desarrollé un sistema de web scraping para extraer información de productos desde tres tiendas online peruanas. Implementé y comparé diversas estrategias de extracción y análisis, utilizando desde herramientas tradicionales como BeautifulSoup para el parseo estructural, hasta técnicas basadas en IA y modelos de lenguaje (LLMs) para la extracción inteligente de datos no estructurados.  Los datos obtenidos fueron normalizados, estructurados en formato JSON y preparados para su posterior análisis o integración en bases de datos, demostrando capacidad para manejar desafíos de variabilidad de datos y eficiencia en la extracción.
-                            </p>
-                            <div class="bubble">
-                                <div class="bubble-skill">
-                                    Python
-                                </div>
-                                <div class="bubble-skill">
-                                    BeautifulSoup
-                                </div>
-                                <div class="bubble-skill">
-                                    JSON
-                                </div>
-                                <div class="bubble-skill">
-                                    IA/LLMs
-                                </div>
-                                
-                            </div>
-                            <div class="reference">
-                                <a href="https://github.com/sogeking-pixel/learn_scraping" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg></a>
-                            </div>
-                        </div>
-                        <div class="project my-5 mx-auto">
-                            <h3>API RESTful de Geografía Peruana</h3>
-                            <p>
-                                Desarrollé una API RESTful para proporcionar datos geográficos estructurados del Perú, incluyendo departamentos, provincias y ciudades. Esta API fue diseñada como una herramienta utilitaria para entornos de desarrollo, facilitando la validación de campos de ubicación en formularios de registro u otras funcionalidades que requieran información geográfica real y jerárquicamente organizada.
-                            </p>
-                            <div class="bubble">
-                                <div class="bubble-skill">
-                                    PHP
-                                </div>
-                                <div class="bubble-skill">
-                                    Laravel
-                                </div>
-                                <div class="bubble-skill">
-                                    MySql
-                                </div>
-                                <div class="bubble-skill">
-                                    API RESTful
-                                </div>
-                                
-                            </div>
-                            <div class="reference">
-                                <a href="https://github.com/sogeking-pixel/api-ubigeo" target="_blank" rel="noopener">GitHub<svg  class="arrow-link" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                                  </svg></a>
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <h1 class="text-center title-section" >Skills</h1>
-                    <section class="skills mb-5 mx-auto" id="skills">
-                        <!-- Lenguajes -->
-                        <div class="group-skills my-0 mx-auto">
-                            <h3><i class="fas fa-code me-2"></i> Lenguajes</h3>
-                            <div class="Lenguages-icons my-2">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" title="Java" alt="Java" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" title="C#" alt="C#" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" title="Kotlin" alt="Kotlin" width="35">
-
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" title="PHP" alt="PHP" width="35">
-                            </div>
-                        </div>
-                    
-                        <!-- Frameworks -->
-                        <div class="group-skills my-0 mx-auto">
-                            <h3><i class="fas fa-layer-group me-2"></i> Frameworks Backend</h3>
-                            <div class="Lenguages-icons my-3">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" title="Spring Boot" alt="Spring Boot" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" title="Django" alt="Django" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" title="Flask" alt="Flask" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" title="Laravel" alt="Laravel" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" title=".NET Core" alt=".NET Core" width="35">
-                            </div>
-                        </div>
-                    
-                        <!-- Base de Datos -->
-                        <div class="group-skills my-0 mx-auto">
-                            <h3><i class="fas fa-database me-2"></i> Base de Datos</h3>
-                            <div class="Lenguages-icons my-3">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" title="MySQL" alt="MySQL" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" title="MongoDB" alt="MongoDB" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" title="PostgreSQL" alt="PostgreSQL" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" title="SQLite" alt="SQLite" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mariadb/mariadb-original.svg" title="MariaDB" alt="MariaDB" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" title="Redis" alt="Redis" width="35">
-                            </div>
-                        </div>
-                    
-                        <!-- Herramientas -->
-                        <div class="group-skills my-0 mx-auto">
-                            <h3><i class="fas fa-tools me-2"></i> Herramientas</h3>
-                            <div class="Lenguages-icons my-3">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="Git" alt="Git" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub" alt="GitHub" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="VS Code" alt="VS Code" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" title="Postman" alt="Postman" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" title="IntelliJ IDEA" alt="IntelliJ" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" title="Visual Studio" alt="Visual Studio" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="Figma" alt="Figma" width="35">
-                            </div>
-                        </div>
-                    
-                        <!-- Cloud / DevOps -->
-                        <div class="group-skills my-0 mx-auto">
-                            <h3><i class="fas fa-cloud me-2"></i> Cloud / DevOps</h3>
-                            <div class="Lenguages-icons my-3">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" title="Firebase" alt="Firebase" width="35">
-                                <img src="https://cdn.simpleicons.org/googlecloud/4285F4" title="Google Cloud" alt="Google Cloud" width="35">
-
-
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker" alt="Docker" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" title="GitHub Actions" alt="GitHub Actions" width="35">
-                                <!-- Puedes añadir íconos de AWS, Azure si los usas -->
-                            </div>
-                        </div>
-                    
-                        <!-- Ciencia de Datos / IA -->
-                        <div class="group-skills my-0 mx-auto">
-                            <h3><i class="fas fa-brain me-2"></i> Ciencia de Datos / IA</h3>
-                            <div class="Lenguages-icons my-3">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" title="Python" alt="Python" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" title="TensorFlow" alt="TensorFlow" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" title="NumPy" alt="NumPy" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" title="Pandas" alt="Pandas" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" title="Jupyter Notebook" alt="Jupyter" width="35">
-                            </div>
-                        </div>
-                    
-                        <!-- Frontend -->
-                        <div class="group-skills my-0 mx-auto">
-                            <h3><i class="fas fa-paint-brush me-2"></i> Frontend</h3>
-                            <div class="Lenguages-icons my-3">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5" alt="HTML5" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3" alt="CSS3" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" title="Bootstrap" alt="Bootstrap" width="35">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" title="Tailwind CSS" alt="Tailwind" width="35">
-                                <!-- Si usas React, puedes añadirlo aquí también -->
-                            </div>
-                        </div>
+                        
                     </section>
                     
 
-                    <div class="footer mt-5  pt-5 text-center">
+                    <div class="footer text-center">
                         <code class="text-muted  fw-bold fs-6">
                             © 2025 Yerson Sanchez. Hecho con ❤️. La IA solo ayudó a centrar un div 🫠
                         </code>
